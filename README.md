@@ -4,7 +4,7 @@ This repository hosts the official website for the **Fundamental Research in Nat
 
 The seminar is dedicated to exploring cutting-edge developments across physics, mathematics, computer science, and interdisciplinary approaches. We bring together researchers and graduate students to discuss foundational questions and emerging methodologies.
 
-🔗 **Live Website:** [https://langxubai.github.io/frns/](https://langxubai.github.io/frns/)
+🔗 **Live Website:** [https://langxubai.github.io/FReNS/](langxubai.github.io/FReNS/)
 
 ## 📅 Features
 - **Schedule Management**: Lists upcoming and past talks with speaker details.
@@ -39,8 +39,8 @@ Add a new <item> block inside the <channel> tag (place it at the top of the item
 
 <item>
   <title>Talk: Speaker Name - Talk Title</title>
-  <link>[https://langxubai.github.io/frns/#schedule](https://langxubai.github.io/frns/#schedule)</link>
-  <guid>[https://langxubai.github.io/frns/talks/YYYY-MM-DD](https://langxubai.github.io/frns/talks/YYYY-MM-DD)</guid>
+  <link>[https://langxubai.github.io/FReNS/#schedule](https://langxubai.github.io/FReNS/#schedule)</link>
+  <guid>[https://langxubai.github.io/FReNS/talks/YYYY-MM-DD](https://langxubai.github.io/FReNS/talks/YYYY-MM-DD)</guid>
   <pubDate>Fri, 21 Nov 2025 14:00:00 +0800</pubDate>
   <description>Speaker: Name (Affiliation). Topic: Title.</description>
 </item>
