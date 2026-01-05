@@ -29,11 +29,11 @@ Open `index.html` and locate the `<tbody>` section inside `<section id="schedule
 </tr>
 ```
 ### 2. Update the RSS Feed (feed.xml)
-To notify subscribers of a new event, open feed.xml.
+- To notify subscribers of a new event, open feed.xml.
 
-Update the <lastBuildDate> tag with the current date.
+- Update the <lastBuildDate> tag with the current date.
 
-Add a new <item> block inside the <channel> tag (place it at the top of the items list):
+- Add a new <item> block inside the <channel> tag (place it at the top of the items list):
 
 ```XML
 
