@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+  <title>Fundamental Research in Natural Sciences Seminar</title>
+  <link>https://langxubai.github.io/frns/</link>
+  <description>Weekly seminars on physics, mathematics, and complex systems.</description>
+  <atom:link href="https://langxubai.github.io/frns/feed.xml" rel="self" type="application/rss+xml" />
+  <language>en-us</language>
+  <lastBuildDate>Mon, 05 Jan 2026 00:00:00 GMT</lastBuildDate>
+
+  <item>
+    <title>Talk: Ruby Wei - High-Distance Error-Correcting Codes</title>
+    <link>https://langxubai.github.io/frns/#schedule</link>
+    <guid>https://langxubai.github.io/frns/talks/2025-11-21</guid>
+    <pubDate>Fri, 21 Nov 2025 14:00:00 +0800</pubDate>
+    <description>Speaker: Ruby Wei (University of Colorado, Boulder). Topic: High-Distance Error-Correcting Codes for Fermion-to-Qubit Mappings in 2D and 3D.</description>
+  </item>
+
+  <item>
+    <title>Lecture: Hongpeng Zhao - Basic Knowledge of Quantum Error Correction</title>
+    <link>https://langxubai.github.io/frns/#schedule</link>
+    <guid>https://langxubai.github.io/frns/talks/2025-10-30</guid>
+    <pubDate>Thu, 30 Oct 2025 14:00:00 +0800</pubDate>
+    <description>Speaker: Hongpeng Zhao (Nankai University). Topic: Basic Knowledge of Quantum Error Correction.</description>
+  </item>
+
+  <item>
+    <title>Talk: Xuanpu Yang - Localized Transition of Disordered Systems</title>
+    <link>https://langxubai.github.io/frns/#schedule</link>
+    <guid>https://langxubai.github.io/frns/talks/2025-05-16</guid>
+    <pubDate>Fri, 16 May 2025 14:00:00 +0800</pubDate>
+    <description>Speaker: Xuanpu Yang (ICQM, Peking University). Topic: Localized Transition of Disordered Systems under Quantum Dissipation.</description>
+  </item>
+
+</channel>
+</rss>
