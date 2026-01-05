@@ -4,136 +4,303 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Fundamental Research in Natural Sciences Seminar</title>
+  <style>
+    /* 全局变量与重置 */
+    :root {
+      --primary-color: #003366; /* 学术深蓝 */
+      --secondary-color: #0056b3; /* 链接与强调色 */
+      --text-color: #333;
+      --bg-color: #f9f9fb;
+      --card-bg: #ffffff;
+      --border-color: #e1e4e8;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.6;
+      color: var(--text-color);
+      background-color: var(--bg-color);
+    }
+
+    a {
+      color: var(--secondary-color);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    a:hover {
+      text-decoration: underline;
+      color: var(--primary-color);
+    }
+
+    /* 头部与导航 */
+    header {
+      background-color: var(--primary-color);
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* 主容器 */
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    /* 模块卡片 */
+    section {
+      background: var(--card-bg);
+      padding: 2rem;
+      margin-bottom: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+      border: 1px solid var(--border-color);
+    }
+
+    section h2 {
+      font-size: 1.5rem;
+      color: var(--primary-color);
+      border-bottom: 2px solid var(--border-color);
+      padding-bottom: 0.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    p {
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      margin-bottom: 1rem;
+      padding-left: 1.5rem;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+
+    /* 表格样式 (Schedule) */
+    .table-responsive {
+      overflow-x: auto;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+      font-size: 0.95rem;
+    }
+
+    th, td {
+      padding: 12px 15px;
+      text-align: left;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    th {
+      background-color: #f1f3f5;
+      color: var(--primary-color);
+      font-weight: 600;
+      white-space: nowrap;
+    }
+
+    tr:hover {
+      background-color: #f8f9fa;
+    }
+
+    /* 联系方式部分优化 */
+    .contact-item {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 0.5rem;
+    }
+    .contact-item strong {
+      min-width: 80px;
+      color: var(--primary-color);
+    }
+
+    /* 页脚 */
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: #666;
+      font-size: 0.9rem;
+      border-top: 1px solid var(--border-color);
+      margin-top: 2rem;
+    }
+
+    /* 移动端适配 */
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.4rem;
+      }
+      section {
+        padding: 1.5rem;
+      }
+      th, td {
+        padding: 8px 10px;
+      }
+    }
+  </style>
 </head>
 <body>
+
   <header>
     <h1>Fundamental Research in Natural Sciences Seminar</h1>
   </header>
 
-  <section id="introduction">
-    <h2>Introduction</h2>
-    <p>
-      The <i><strong>F</strong>undamental <strong>Re</strong>search in <strong>N</strong>atural <strong>S</strong>ciences Seminar</i> is a weekly seminars dedicated to exploring cutting-edge developments across physics, mathematics, computer science, and interdisciplinary approaches to understanding the natural world. By bringing together leading researchers and graduate students, we aim to:
-    </p>
-    <ul>
-      <li>Foster in-depth discussions on foundational questions</li>
-      <li>Showcase emerging techniques and methodologies</li>
-      <li>Stimulate collaborations across traditional disciplinary boundaries</li>
-    </ul>
-    <p>
-      Whether you’re working on quantum information, complex systems, condensed matter physics, or theoretical biology, you will find new perspectives and colleagues here.
-    </p>
-    <p>
-      Our <strong>advantage</strong> is that we discuss a topic several times and even organize short courses to ensure that attendees can thoroughly understand the content of the topic.
-    </p>
-  </section>
+  <div class="container">
+    
+    <section id="introduction">
+      <h2>Introduction</h2>
+      <p>
+        The <i><strong>F</strong>undamental <strong>Re</strong>search in <strong>N</strong>atural <strong>S</strong>ciences Seminar</i> is a weekly seminar dedicated to exploring cutting-edge developments across physics, mathematics, computer science, and interdisciplinary approaches to understanding the natural world. By bringing together leading researchers and graduate students, we aim to:
+      </p>
+      <ul>
+        <li>Foster in-depth discussions on foundational questions</li>
+        <li>Showcase emerging techniques and methodologies</li>
+        <li>Stimulate collaborations across traditional disciplinary boundaries</li>
+      </ul>
+      <p>
+        Whether you’re working on quantum information, complex systems, condensed matter physics, or theoretical biology, you will find new perspectives and colleagues here.
+      </p>
+      <p>
+        Our <strong>advantage</strong> is that we discuss a topic several times and even organize short courses to ensure that attendees can thoroughly understand the content of the topic.
+      </p>
+    </section>
 
-  <section id="updates">
-    <h2>Updates</h2>
-    <ul>
-      <!-- <li><strong>Oct 2025:</strong> New talks on Quantum Error Correction and Artificial Intelligence are coming soon!</li> -->
-    </ul>
-  </section>
+    <section id="updates">
+      <h2>Updates</h2>
+      <p><em>Check back soon for upcoming seminar announcements.</em></p>
+      </section>
 
-  <section id="schedule">
-    <h2>Schedule &amp; Past Speakers</h2>
-    <table border="1" cellpadding="6" cellspacing="0">
-      <thead>
-        <tr>
-          <th>Date</th>
-          <th>Speaker</th>
-          <th>Affiliation</th>
-          <th>Talk Title</th>
-          <th>Type</th>
-          <th>Collection</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Jan TBD, 2026</td>
-          <td>Yixin Ma</td>
-          <td>KITS, UCAS</td>
-          <td>TBD</td>
-          <td>Talk</td>
-          <td>TBD</td>
-        </tr>
-        <tr>
-          <td>Nov 21, 2025</td>
-          <td><a href="https://sites.google.com/view/zixian-wei/home">Ruby Wei</td>
-          <td>Department of Physics, University of Colorado, Boulder</td>
-          <td>High-Distance Error-Correcting Codes for Fermion-to-Qubit Mappings in 2D and 3D</td>
-          <td>Talk</td>
-          <td>Quantum Error Correction</td>
-        </tr>
-        <tr>
-          <td>Oct 30, 2025</td>
-          <td>Hongpeng Zhao</td>
-          <td>School of Physics, Nankai University</td>
-          <td>Basic Knowledge of Quantum Error Correction</td>
-          <td>Lecture</td>
-          <td>Quantum Error Correction</td>
-        </tr>
-        <tr>
-          <td>May 16, 2025</td>
-          <td>Xuanpu Yang</td>
-          <!-- <td>School of Physics, Nankai University</td> -->
-          <td>ICQM, Peking University</td>
-          <td>Localized Transition of Disordered Systems under Quantum Dissipation</td>
-          <td>Talk</td>
-          <td>Quantum Dissipation</td>
-        </tr>
-        <tr>
-          <td>May 9, 2025</td>
-          <td><a href="https://scholar.google.fr/citations?user=34VEZnEAAAAJ&hl=fr">Yijia Wang</td>
-          <td>Institute of Theoretical Physics, CAS</td>
-          <td>Tensor Network Message Passing</td>
-          <td>Talk</td>
-          <td>Theoretical and Numerical Solutions of Complex Systems</td>
-        </tr>
-        <tr>
-          <td>April 11, 2025</td>
-          <td>Zehao Cen</td>
-          <!-- <td>School of Physics, Nankai University</td> -->
-          <td>Institute of Theoretical Physics, CAS</td>
-          <td>Unveiling Learning Dynamics in Neural Networks: A Spin Glass Theory Approach</td>
-          <td>Lecture</td>
-          <td>Theoretical and Numerical Solutions of Complex Systems</td>
-        </tr>
-      </tbody>
-    </table>
-  </section>
+    <section id="schedule">
+      <h2>Schedule &amp; Past Speakers</h2>
+      <div class="table-responsive">
+        <table>
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Speaker</th>
+              <th>Affiliation</th>
+              <th>Talk Title</th>
+              <th>Type</th>
+              <th>Collection</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Jan TBD, 2026</td>
+              <td>Yixin Ma</td>
+              <td>KITS, UCAS</td>
+              <td>TBD</td>
+              <td>Talk</td>
+              <td>TBD</td>
+            </tr>
+            <tr>
+              <td>Nov 21, 2025</td>
+              <td><a href="https://sites.google.com/view/zixian-wei/home" target="_blank">Ruby Wei</a></td>
+              <td>Department of Physics, University of Colorado, Boulder</td>
+              <td>High-Distance Error-Correcting Codes for Fermion-to-Qubit Mappings in 2D and 3D</td>
+              <td>Talk</td>
+              <td>Quantum Error Correction</td>
+            </tr>
+            <tr>
+              <td>Oct 30, 2025</td>
+              <td>Hongpeng Zhao</td>
+              <td>School of Physics, Nankai University</td>
+              <td>Basic Knowledge of Quantum Error Correction</td>
+              <td>Lecture</td>
+              <td>Quantum Error Correction</td>
+            </tr>
+            <tr>
+              <td>May 16, 2025</td>
+              <td>Xuanpu Yang</td>
+              <td>ICQM, Peking University</td>
+              <td>Localized Transition of Disordered Systems under Quantum Dissipation</td>
+              <td>Talk</td>
+              <td>Quantum Dissipation</td>
+            </tr>
+            <tr>
+              <td>May 9, 2025</td>
+              <td><a href="https://scholar.google.fr/citations?user=34VEZnEAAAAJ&hl=fr" target="_blank">Yijia Wang</a></td>
+              <td>Institute of Theoretical Physics, CAS</td>
+              <td>Tensor Network Message Passing</td>
+              <td>Talk</td>
+              <td>Theoretical and Numerical Solutions of Complex Systems</td>
+            </tr>
+            <tr>
+              <td>April 11, 2025</td>
+              <td>Zehao Cen</td>
+              <td>Institute of Theoretical Physics, CAS</td>
+              <td>Unveiling Learning Dynamics in Neural Networks: A Spin Glass Theory Approach</td>
+              <td>Lecture</td>
+              <td>Theoretical and Numerical Solutions of Complex Systems</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
 
-  <section id="organizers">
-    <h2>Organizers</h2>
-    <ul>
-      <li><strong>Chair:</strong> 
-        <ul>
-          <li>Langxu Bai (School of Physics, Nankai University)</li>
-          <li>Siyuan He (Tsung-Dao Lee Institute, Shanghai Jiaotong University)</li>
-          <li>Lingyu Ren (School of Physics, Nankai University)</li>
-        </ul>
-      </li>
-      <li><strong>Special Thanks to</strong>
-        <ul>
-          <li>Siyuan He and Yuchen Liu for their strong support of the seminar</li>
-          <li>Yijia Wang for her helpful advice</li>
-        </ul>
-      </li>
-      <!--<li><strong>Logistics &amp; Web:</strong> Ms. Yuxin Zhang (Seminar Coordinator)</li>-->
-    </ul>
-  </section>
+    <section id="organizers">
+      <h2>Organizers</h2>
+      <ul>
+        <li><strong>Chair:</strong> 
+          <ul>
+            <li>Langxu Bai (School of Physics, Nankai University)</li>
+            <li>Siyuan He (Tsung-Dao Lee Institute, Shanghai Jiaotong University)</li>
+            <li>Lingyu Ren (School of Physics, Nankai University)</li>
+          </ul>
+        </li>
+        <li><strong>Special Thanks to:</strong>
+          <ul>
+            <li>Siyuan He and Yuchen Liu for their strong support of the seminar</li>
+            <li>Yijia Wang for her helpful advice</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p><strong>Email:</strong> <a href="mailto:lxbai@mail.nankai.edu.cn">lxbai@mail.nankai.edu.cn</a></p>
-    <p><strong>Website:</strong> <a href="https://langxubai.github.io/frns/" target="_blank">langxubai.github.io/frns</a></p>
-    <p><strong>Mail:</strong> Nankai University, 94 Weijin Road, Nankai District, Tianjin, P.R.China 300071</p>
-    <p><strong>WeChat:</strong> “FRNS-seminar”</p>
-    <p>Feel free to reach out with questions, talk proposals, or collaboration ideas. We look forward to seeing you at the next session!</p>
-  </section>
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="contact-item">
+        <strong>Email:</strong> <a href="mailto:lxbai@mail.nankai.edu.cn">lxbai@mail.nankai.edu.cn</a>
+      </div>
+      <div class="contact-item">
+        <strong>Website:</strong> <a href="https://langxubai.github.io/frns/" target="_blank">langxubai.github.io/frns</a>
+      </div>
+      <div class="contact-item">
+        <strong>Mail:</strong> <span>Nankai University, 94 Weijin Road, Nankai District, Tianjin, P.R.China 300071</span>
+      </div>
+      <div class="contact-item">
+        <strong>WeChat:</strong> <span>“FRNS-seminar”</span>
+      </div>
+      <p style="margin-top: 1rem; color: #555;">
+        Feel free to reach out with questions, talk proposals, or collaboration ideas. We look forward to seeing you at the next session!
+      </p>
+    </section>
+
+  </div>
 
   <footer>
     <p>&copy; 2025 Fundamental Research in Natural Sciences Seminar</p>
   </footer>
+
 </body>
 </html>
