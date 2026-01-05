@@ -27,6 +27,7 @@ Open `index.html` and locate the `<tbody>` section inside `<section id="schedule
   <td>Type (Talk/Lecture)</td>
   <td>Collection/Topic</td>
 </tr>
+```
 ### 2. Update the RSS Feed (feed.xml)
 To notify subscribers of a new event, open feed.xml.
 
@@ -34,7 +35,7 @@ Update the <lastBuildDate> tag with the current date.
 
 Add a new <item> block inside the <channel> tag (place it at the top of the items list):
 
-XML
+```XML
 
 <item>
   <title>Talk: Speaker Name - Talk Title</title>
@@ -43,6 +44,7 @@ XML
   <pubDate>Fri, 21 Nov 2025 14:00:00 +0800</pubDate>
   <description>Speaker: Name (Affiliation). Topic: Title.</description>
 </item>
+```
 ## 👥 Organizers
 Langxu Bai (Nankai University)
 
