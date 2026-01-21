@@ -99,12 +99,13 @@
     /* 表格样式 (Schedule) */
     .table-responsive {
       overflow-x: auto;
+      margin-bottom: 1rem;
     }
 
     table {
       width: 100%;
       border-collapse: collapse;
-      margin-top: 1rem;
+      margin-top: 0.5rem;
       font-size: 0.95rem;
     }
 
@@ -123,6 +124,27 @@
 
     tr:hover {
       background-color: #f8f9fa;
+    }
+
+    /* 折叠部分样式优化 */
+    details {
+      margin-top: 1.5rem;
+      border: 1px solid var(--border-color);
+      border-radius: 6px;
+      padding: 0.5rem;
+      background-color: #fafbfc;
+    }
+
+    summary {
+      cursor: pointer;
+      font-weight: 600;
+      color: var(--primary-color);
+      padding: 0.5rem;
+      outline: none;
+    }
+
+    summary:hover {
+      color: var(--secondary-color);
     }
 
     /* 联系方式部分优化 */
@@ -189,10 +211,12 @@
     <section id="updates">
       <h2>Updates</h2>
       <p><em>Check back soon for upcoming seminar announcements.</em></p>
-      </section>
+    </section>
 
     <section id="schedule">
-      <h2>Schedule &amp; Past Speakers</h2>
+      <h2>Schedule</h2>
+      
+      <h3>2026 Seminars</h3>
       <div class="table-responsive">
         <table>
           <thead>
@@ -206,57 +230,66 @@
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td>Jan 20, 2026</td>
-              <td>Yixin Ma</td>
-              <td>KITS, UCAS</td>
-              <td>Unveiling 2D Correlated Topological Phases through Tensor-Network States</td>
-              <td>Talk</td>
-              <td>Topological Phases</td>
-            </tr>
-            <tr>
-              <td>Nov 21, 2025</td>
-              <td><a href="https://sites.google.com/view/zixian-wei/home" target="_blank" rel="noopener noreferrer">Ruby Wei</a></td>
-              <td>Physics, CU Boulder</td>
-              <td>High-Distance Error-Correcting Codes for Fermion-to-Qubit Mappings in 2D and 3D</td>
-              <td>Talk</td>
-              <td>Quantum Error Correction</td>
-            </tr>
-            <tr>
-              <td>Oct 30, 2025</td>
-              <td>Hongpeng Zhao</td>
-              <td>Physics, Nankai Univ.</td>
-              <td>Introduction to Quantum Error Correction</td>
-              <td>Lecture</td>
-              <td>Quantum Error Correction</td>
-            </tr>
-            <tr>
-              <td>May 16, 2025</td>
-              <td>Xuanpu Yang</td>
-              <td>ICQM, Peking Univ.</td>
-              <td>Localized Transition of Disordered Systems under Quantum Dissipation</td>
-              <td>Talk</td>
-              <td>Open Quantum Systems</td>
-            </tr>
-            <tr>
-              <td>May 9, 2025</td>
-              <td><a href="https://scholar.google.fr/citations?user=34VEZnEAAAAJ&hl=fr" target="_blank" rel="noopener noreferrer">Yijia Wang</a></td>
-              <td>ITP, CAS</td>
-              <td>Tensor Network Message Passing</td>
-              <td>Talk</td>
-              <td>Tensor Networks</td>
-            </tr>
-            <tr>
-              <td>April 11, 2025</td>
-              <td>Zehao Cen</td>
-              <td>ITP, CAS</td>
-              <td>Unveiling Learning Dynamics in Neural Networks: A Spin Glass Theory Approach</td>
-              <td>Lecture</td>
-              <td>Physics of AI</td>
-            </tr>
+            {% for talk in site.data.talks %}
+              {% if talk.date contains '2026' %}
+              <tr>
+                <td>{{ talk.date }}</td>
+                <td>
+                  {% if talk.link != "" %}
+                    <a href="{{ talk.link }}" target="_blank" rel="noopener noreferrer">{{ talk.speaker }}</a>
+                  {% else %}
+                    {{ talk.speaker }}
+                  {% endif %}
+                </td>
+                <td>{{ talk.affiliation }}</td>
+                <td>{{ talk.title }}</td>
+                <td>{{ talk.type }}</td>
+                <td>{{ talk.collection }}</td>
+              </tr>
+              {% endif %}
+            {% endfor %}
           </tbody>
         </table>
       </div>
+
+      <details>
+        <summary>Past Seminars (2025)</summary>
+        <div class="table-responsive">
+          <table>
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>Speaker</th>
+                <th>Affiliation</th>
+                <th>Talk Title</th>
+                <th>Type</th>
+                <th>Collection</th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for talk in site.data.talks %}
+                {% if talk.date contains '2025' %}
+                <tr>
+                  <td>{{ talk.date }}</td>
+                  <td>
+                    {% if talk.link != "" %}
+                      <a href="{{ talk.link }}" target="_blank" rel="noopener noreferrer">{{ talk.speaker }}</a>
+                    {% else %}
+                      {{ talk.speaker }}
+                    {% endif %}
+                  </td>
+                  <td>{{ talk.affiliation }}</td>
+                  <td>{{ talk.title }}</td>
+                  <td>{{ talk.type }}</td>
+                  <td>{{ talk.collection }}</td>
+                </tr>
+                {% endif %}
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
+      </details>
+
     </section>
 
     <section id="organizers">
