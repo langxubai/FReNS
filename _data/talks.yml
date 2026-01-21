@@ -1,0 +1,56 @@
+# 格式说明：
+# date: 日期
+# speaker: 讲者名字
+# affiliation: 单位
+# title: 题目
+# type: Talk 或 Lecture
+# collection: 所属系列
+# link: 讲者主页链接（如果没有就留空 ""）
+
+- date: "Jan 20, 2026"
+  speaker: "Yixin Ma"
+  affiliation: "KITS, UCAS"
+  title: "Unveiling 2D Correlated Topological Phases through Tensor-Network States"
+  type: "Talk"
+  collection: "Topological Phases"
+  link: ""
+
+- date: "Nov 21, 2025"
+  speaker: "Ruby Wei"
+  affiliation: "Physics, CU Boulder"
+  title: "High-Distance Error-Correcting Codes for Fermion-to-Qubit Mappings in 2D and 3D"
+  type: "Talk"
+  collection: "Quantum Error Correction"
+  link: "https://sites.google.com/view/zixian-wei/home"
+
+- date: "Oct 30, 2025"
+  speaker: "Hongpeng Zhao"
+  affiliation: "Physics, Nankai Univ."
+  title: "Basic Knowledge of Quantum Error Correction"
+  type: "Lecture"
+  collection: "Quantum Error Correction"
+  link: ""
+
+- date: "May 16, 2025"
+  speaker: "Xuanpu Yang"
+  affiliation: "ICQM, Peking Univ."
+  title: "Localized Transition of Disordered Systems under Quantum Dissipation"
+  type: "Talk"
+  collection: "Open Quantum Systems"
+  link: ""
+
+- date: "May 9, 2025"
+  speaker: "Yijia Wang"
+  affiliation: "ITP, CAS"
+  title: "Tensor Network Message Passing"
+  type: "Talk"
+  collection: "Tensor Networks"
+  link: "https://scholar.google.fr/citations?user=34VEZnEAAAAJ&hl=fr"
+
+- date: "April 11, 2025"
+  speaker: "Zehao Cen"
+  affiliation: "ITP, CAS"
+  title: "Unveiling Learning Dynamics in Neural Networks: A Spin Glass Theory Approach"
+  type: "Lecture"
+  collection: "Physics of AI"
+  link: ""
