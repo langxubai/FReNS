@@ -39,8 +39,8 @@ Open `index.html` and locate the `<tbody>` section inside `<section id="schedule
 
 <item>
   <title>Talk: Speaker Name - Talk Title</title>
-  <link>[https://langxubai.github.io/FReNS/#schedule](https://langxubai.github.io/FReNS/#schedule)</link>
-  <guid>[https://langxubai.github.io/FReNS/talks/YYYY-MM-DD](https://langxubai.github.io/FReNS/talks/YYYY-MM-DD)</guid>
+  <link>https://langxubai.github.io/FReNS/#schedule</link>
+  <guid>https://langxubai.github.io/FReNS/talks/YYYY-MM-DD</guid>
   <pubDate>Fri, 21 Nov 2025 14:00:00 +0800</pubDate>
   <description>Speaker: Name (Affiliation). Topic: Title.</description>
 </item>
