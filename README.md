@@ -21,7 +21,7 @@ Open `index.html` and locate the `<tbody>` section inside `<section id="schedule
 ```html
 <tr>
   <td>Date</td>
-  <td>Speaker Name</td>
+  <td><a href="" target="_blank" rel="noopener noreferrer">Speaker Name</a></td>
   <td>Affiliation</td>
   <td>Talk Title</td>
   <td>Type (Talk/Lecture)</td>
